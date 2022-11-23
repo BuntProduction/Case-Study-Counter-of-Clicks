@@ -33,3 +33,5 @@ function pause(){
 function reload(){
   window.location.reload();
 }
+
+//made by Gatien https://github.com/BuntProduction
