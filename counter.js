@@ -1,9 +1,10 @@
 var counter = 0;
 var timer;
 var sec = 0;
-var isLauched = false;
+var isLaunched = false;
+
 function start(){
-  isLauched = true;
+  isLaunched = true;
     timer = setInterval(()=>{
       document.getElementById("timer").innerHTML = +sec;
       sec ++;
@@ -14,7 +15,7 @@ function start(){
 
 function counterFunction(){
 
-  if(counter < 20 && isLauched){
+  if(counter < 20 && isLaunched){
       document.getElementById("counterOfClicks").innerHTML = ++counter;
       counter = counter;
   }
@@ -24,7 +25,7 @@ function counterFunction(){
 }
 
 function pause(){
-    isLauched = false;
+    isLaunched = false;
     clearInterval(timer); // to check if the clear interval works
   
 }
